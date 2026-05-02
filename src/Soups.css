@@ -1,0 +1,55 @@
+/* =======================
+   Premium Page Title
+   ======================= */
+
+.menu-title{
+  font-size:36px;
+  font-weight:700;
+  color:#2c3e50;
+  letter-spacing:1px;
+}
+
+/* =======================
+   Section Headings
+   ======================= */
+
+.veg-heading{
+  color:#2e7d32;
+  font-weight:600;
+}
+
+.nonveg-heading{
+  color:#c62828;
+  font-weight:600;
+}
+
+/* =======================
+   Pagination
+   ======================= */
+
+.pagination{
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+  gap:10px;
+}
+
+.pagination button{
+  padding:6px 12px;
+  border:none;
+  border-radius:6px;
+  background:#ddd;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.pagination button:hover{
+  background:#ff5722;
+  color:white;
+}
+
+.active-page{
+  background:#ff5722 !important;
+  color:white;
+}

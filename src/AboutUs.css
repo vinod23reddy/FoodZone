@@ -1,0 +1,238 @@
+/* PAGE */
+.about-page {
+  font-family: "Poppins", sans-serif;
+}
+
+/* HERO */
+.about-page .hero {
+  height: 300px;
+  background: url("https://images.unsplash.com/photo-1555992336-03a23c7b20ee") center/cover;
+  position: relative;
+}
+
+.about-page .hero-overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+
+.about-page .hero h1 {
+  font-size: 48px;
+}
+
+.about-page .hero p {
+  background: red;
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+
+/* VIDEO */
+.about-page .video-section {
+  text-align:center;
+  padding: 50px;
+}
+
+.about-page .video-container iframe {
+  width: 80%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+/* SERVICES */
+.about-page .services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-page .slider {
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.about-page .slide-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.about-page .service-card {
+  width: 220px;
+  background: #fff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.about-page .icon-circle {
+  width: 60px;
+  height: 60px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* REVIEWS */
+.about-page .reviews {
+  padding:50px;
+  text-align:center;
+}
+
+.about-page .review-container {
+  display:flex;
+  gap:20px;
+  overflow-x:auto;
+}
+
+.about-page .review-card {
+  min-width:250px;
+  background:white;
+  padding:20px;
+  border-radius:10px;
+}
+
+/* NEWSLETTER */
+
+.about-page .newsletter {
+  display:flex;
+}
+
+.about-page .newsletter-image {
+  flex:1;
+  background:url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5") center/cover;
+}
+
+.about-page .newsletter-content {
+  flex:1;
+  padding:40px;
+  background:#f9f9f9;
+}
+
+/* ANIMATION */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.video-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff8f0; /* light warm background */
+}
+
+/* 🔥 Main Heading */
+.video-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #5a2d0c; /* rich brown */
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* Stylish underline effect */
+.video-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #c59d5f; /* gold accent */
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* ✨ Subtitle */
+.video-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #7a6a5a;
+  letter-spacing: 0.5px;
+}
+
+/* Heading */
+.services-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #4a2c2a; /* deep elegant tone */
+  letter-spacing: 1px;
+}
+
+/* Subtitle */
+.section-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #6d6d6d;
+  letter-spacing: 0.5px;
+}
+
+.newsletter-content {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff8f0;
+}
+
+/* 🔥 Heading */
+.newsletter-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #5a2d0c;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* ✨ Subtitle */
+.newsletter-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  color: #7a6a5a;
+  margin-bottom: 25px;
+}
+
+/* 📩 Input + Button */
+.input-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.input-box input {
+  padding: 12px 15px;
+  width: 260px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-box input:focus {
+  border-color: #c59d5f;
+}
+
+/* 🔘 Button */
+.newsletter-btn {
+  padding: 12px 20px;
+  background: #c59d5f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.newsletter-btn:hover {
+  background: #a67c3d;
+}

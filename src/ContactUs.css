@@ -1,0 +1,273 @@
+/* PAGE */
+.contact-page {
+  font-family: "Poppins", sans-serif;
+}
+
+/* HERO */
+.contact-hero {
+  height: 300px;
+  background: url("https://images.unsplash.com/photo-1555992336-03a23c7b20ee") center/cover;
+  position: relative;
+}
+
+.contact-overlay {
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+
+.contact-overlay h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+
+  color: #ffffff;
+
+  margin-bottom: 10px;
+
+  text-shadow: 
+    2px 4px 15px rgba(0,0,0,0.8);
+}
+
+.contact-overlay p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+
+  color: #f5f5f5;
+
+  padding: 6px 18px;
+  border-radius: 25px;
+
+  background: rgba(0, 0, 0, 0.4);
+
+  backdrop-filter: blur(6px);
+
+  margin-top: 8px;
+
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+/* MAIN */
+.contact-main {
+  display: flex;
+  gap: 40px;
+  padding: 50px;
+}
+
+/* LEFT */
+.contact-left {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-card {
+  background: #f7f7f7;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.info-card:hover {
+  background: #ffe0d6;
+  transform: translateY(-5px);
+}
+
+/* RIGHT */
+.contact-right {
+  flex: 1;
+}
+
+.contact-right h2 {
+  font-size: 32px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  background: #c97a50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #a45a35;
+}
+
+/* MAP */
+.map-section {
+  padding: 40px;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background: #3b2320;   /* brown color like image */
+  color: white;
+  padding: 50px 20px 20px;
+}
+
+/* CONTAINER */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* BOX */
+.footer-box {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-box h3,
+.footer-box h4 {
+  margin-bottom: 15px;
+}
+
+.footer-box p {
+  margin: 6px 0;
+  color: #ddd;
+  cursor: pointer;
+}
+
+/* HOVER */
+.footer-box p:hover {
+  color: #ffb089;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #555;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+/* Reviews Heading */
+.reviews-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #4a2c2a;
+  letter-spacing: 1px;
+}
+
+/* Subtitle (reuse same class for consistency) */
+.section-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  color: #6d6d6d;
+  letter-spacing: 0.5px;
+}
+
+/* 🔥 Top Heading */
+.contact-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #5a2d0c;
+  letter-spacing: 1px;
+}
+
+/* ✨ Subtitle */
+.contact-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #7a6a5a;
+  margin-top: 8px;
+}
+
+/* 📞 Left Cards */
+.info-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #4a2c2a;
+  font-weight: 600;
+}
+
+.info-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #6d6d6d;
+}
+
+/* ✉️ Right Section Title */
+.contact-form-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #5a2d0c;
+  margin-bottom: 5px;
+}
+
+.contact-form-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #7a6a5a;
+  margin-bottom: 20px;
+}
+
+/* 🧾 Inputs */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #c59d5f;
+}
+
+/* 🔘 Button */
+.contact-form button {
+  background: #c59d5f;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #a67c3d;
+}

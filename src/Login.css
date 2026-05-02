@@ -1,0 +1,32 @@
+.login-container{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff7a18,#ffb347);
+}
+
+.login-box{
+width:350px;
+padding:40px;
+background:white;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.login-title{
+margin-bottom:25px;
+font-weight:bold;
+color:#333;
+}
+
+.login-box input{
+border-radius:8px;
+padding:10px;
+}
+
+.login-box button{
+border-radius:8px;
+font-weight:bold;
+}

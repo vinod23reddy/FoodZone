@@ -1,0 +1,59 @@
+/* -------------------- */
+/* Global Reset */
+/* -------------------- */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------------------- */
+/* Root + Body Setup */
+/* -------------------- */
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* -------------------- */
+/* Links */
+/* -------------------- */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -------------------- */
+/* Buttons */
+/* -------------------- */
+
+button {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* -------------------- */
+/* Images & Media */
+/* -------------------- */
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}

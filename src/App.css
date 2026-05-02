@@ -1,0 +1,183 @@
+/* ---------------- GLOBAL ---------------- */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+}
+
+/* ---------------- NAVBAR ---------------- */
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: 95%;              /* ✅ increased for single line */
+  max-width: 1400px;      /* ✅ allow more space */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 12px 20px;
+    min-height: 120px;
+
+
+  border-radius: 50px;
+
+  background: linear-gradient(135deg, #ffffff, #f1f5f9);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  z-index: 1000;
+}
+
+/* ---------------- LOGO ---------------- */
+
+.logo {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #2c3e50;
+}
+
+/* ---------------- NAV LINKS ---------------- */
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: nowrap;        /* ✅ prevent second line */
+  justify-content: center;
+}
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2c3e50;
+  padding: 6px 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+
+  white-space: nowrap;      /* ✅ prevent text breaking */
+}
+
+/* Elegant Hover Effect */
+.nav-links a:hover {
+  background: rgba(44, 62, 80, 0.08);
+  color: #1a252f;
+  transform: translateY(-3px);
+}
+
+/* Underline Animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: #4a6fa5;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+  width: 60%;
+}
+
+/* ---------------- PAGE CONTENT ---------------- */
+
+.page-content {
+  padding: 140px 40px 40px 40px;
+}
+
+/* ---------------- BUTTONS ---------------- */
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.btn-primary {
+  background: #ff5722;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #e64a19;
+}
+
+.btn-success {
+  background: #4caf50;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #388e3c;
+}
+
+.btn-outline {
+  border: 1px solid #ff5722;
+  background: #fff;
+  color: #333;
+}
+
+.btn-outline:hover {
+  background: #ffe0d5;
+}
+
+/* ============================= */
+/* USER GREETING + LOGOUT BUTTON */
+/* ============================= */
+
+.welcome-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff5722;
+  cursor: pointer;
+  margin-bottom: 5px;   /* ✅ space above button */
+}
+
+.welcome-text:hover {
+  color: #e64a19;
+  text-decoration: underline;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #43a047, #2e7d32);
+  transform: translateY(-2px);
+}
+
+/* ---------------- RIGHT SECTION ---------------- */
+
+.nav-right {
+  position: absolute;
+  right: 20px;
+
+  display: flex;
+  flex-direction: column;   /* ✅ name above button */
+  align-items: flex-end;
+}
