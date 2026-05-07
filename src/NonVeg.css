@@ -39,7 +39,7 @@ h1 {
 .card {
   width: 260px;
   background-color: #fff;
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: 0.3s ease;
